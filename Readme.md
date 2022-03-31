@@ -1,5 +1,5 @@
-# To run the app, from the basedir ./ml_server_datarobot_naren
-# open a CMD prompt cd into ./ml_server_datarobot_naren
+# To run the app, from the basedir ./ml_server_iris
+# open a CMD prompt cd into ./ml_server_datarobot_iris
 # run the below commands in order 
 
 # to start the app, i developed it in python 3.7
