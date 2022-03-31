@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "6584cea2-3799-4098-8fa3-9441c5e7856e",
+		"name": "ML_DataRobot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "csv_file",
+							"type": "file",
+							"src": "/C:/My Stuff/recruitment/post_h1b/interviews/datarobot/flask_iris_dev_validate/iris.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/create?target=Species",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"create"
+					],
+					"query": [
+						{
+							"key": "target",
+							"value": "Species"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "predict",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "input_line",
+							"value": "5.1,3.5,1.4,0.2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/predict",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
